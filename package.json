@@ -1,0 +1,22 @@
+{
+  "name": "nzdiaryshop",
+  "version": "1.0.0",
+  "description": "An online website for Diary products in New Zealand",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surya-surendranath/NZDiaryShop.git"
+  },
+  "author": "Surya S Nath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surya-surendranath/NZDiaryShop/issues"
+  },
+  "homepage": "https://github.com/surya-surendranath/NZDiaryShop#readme"
+}

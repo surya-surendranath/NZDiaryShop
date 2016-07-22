@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node  client/index.js",
+    "build": "npm run build-bundle",
+    "build-bundle": "browserify client/index.js -o public/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,31 @@
   "bugs": {
     "url": "https://github.com/surya-surendranath/NZDiaryShop/issues"
   },
-  "homepage": "https://github.com/surya-surendranath/NZDiaryShop#readme"
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "homepage": "https://github.com/surya-surendranath/NZDiaryShop#readme",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "dev": "^0.1.3",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "budo": "^8.3.0"
+  }
 }

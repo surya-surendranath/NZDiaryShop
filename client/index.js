@@ -1,6 +1,12 @@
 import React from 'react'
-import { Router, Route } from 'react-router'
+import { createStore } from 'redux'
+import { Provider } from 'redux'
 import { render } from 'react-dom'
-import ReactDOM from 'react-dom'
-import { domready } from 'domready'
+import App from './components/app.jsx'
+
+render(
+	<App />,
+	document.getElementById('app'))
+
+
 

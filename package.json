@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node  client/index.js",
+    "start": "browserify client/index.js -o public/bundle.js & http-server public -p 8008",
     "build": "npm run build-bundle",
     "build-bundle": "browserify client/index.js -o public/bundle.js"
   },

@@ -6,8 +6,8 @@ class Heading extends Component {
 		return (
 			<div>
 			<h1>Gluten Free Products </h1>
-			<p>hi all</p>
-		    <button>click me</button>
+			<p id="show">hi all</p>
+		    <button id="button1">click me</button>
 			</div>
 			)
 	}
